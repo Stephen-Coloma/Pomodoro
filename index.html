@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+    <title>Pomodoro Timer</title>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="card">
+            <!-- Options division -->
+            <div class="options">
+                <button type="button" class="button" id="pmdrBtn" onclick="setUp('rgb(186, 73, 73)')">Pomodoro</button>
+                <button type="button" class="button" id="shrtBrkBtn" onclick="setUp('rgb(56, 133, 138)')">Short Break</button>
+                <button type="button" class="button" id="lngBrkBtn" onclick="setUp('rgb(57, 112, 151)')">Long Break</button>
+            </div>
+
+            <!-- Timer division -->
+            <div class="timer">
+                <h1 id="textTimer">25:00</h1>
+            </div>
+
+            <!-- Start and Stop division -->
+            <div class="util">
+                <button type="button" class="button" id="startStopBtn" onclick="countdown()">Start</button>
+            </div>
+        </div>
+        <h3>Time to focus!</h3>
+    </div>
+</body> 
+</html>

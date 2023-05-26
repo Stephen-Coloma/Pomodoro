@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    margin: 0,0,0,0;
+    color: white;
+}
+
+body{
+    height: 97vh;
+    width: 97vw;
+    background-color: rgb(186, 73, 73);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.09);  
+    backdrop-filter: blur(5px);
+}
+
+
+.card .options{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card .timer{   
+    height: 70%;
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BUTTON STYLE */
+.button{
+    background-color: rgba(255, 255, 255, 0); /*transparent */
+    border: none;
+    border-radius: 5px;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#pmdrBtn{
+    background-color: rgba(142, 76, 76,0.65);
+}
+
+#startStopBtn{
+    background-color: rgba(255, 255, 255); 
+    color: rgb(186, 73, 73);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+h3{
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+
+/* If the screen size is 600px wide or less, adjust font size to fit on the screen */
+@media screen and (max-width: 600px) {
+    .card{
+        height: 50vh;
+        width: 60vw;
+    }
+
+    .button{
+        font-size: 0.8em;
+    }
+  }
+
