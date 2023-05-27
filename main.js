@@ -1,6 +1,6 @@
 const clock = {
-    minute: 0,
-    seconds: 5,
+    minute: 24,
+    seconds: 60,
     dummyDisplay: "25:00",
     resetMin: 24,
     resetSec: 60,
@@ -14,7 +14,7 @@ function countdown() {
   const startStopBtn = document.getElementById("startStopBtn");
 
   if (startStopBtn.innerHTML === "Start") {
-    // Start the interval
+    // Start the interval of the update method with a delay of 1 sec
     interval = setInterval(update, 1000);
     startStopBtn.innerHTML = "Stop";
     valid = true; 
@@ -151,4 +151,10 @@ function pomodoro(){
     document.getElementById("body").className = "longBreak";
 
   }
-  
+
+  function playSound(){
+    var audio = document.getElementById('button-audio');
+
+    audio.currentTime = 0; // Rewind audio to the beginning
+    audio.play(); 
+  }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 
@@ -29,7 +29,10 @@
 
             <!-- Start and Stop division -->
             <div class="util">
-                <button type="button" class="button" id="startStopBtn" onclick="countdown()">Start</button>
+                <button type="button" class="button" id="startStopBtn" onclick="countdown();playSound()">Start</button>
+                <audio id="button-audio">
+                    <source src="sounds/click.m4a" type="audio/mpeg">
+                </audio>
             </div>
         </div>
         <h3 id="msg">Time to focus!</h3>

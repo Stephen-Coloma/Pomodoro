@@ -12,6 +12,10 @@
     --btn3-bg-color: none;
 
     --btn-color: var(--bg-color);
+
+    --btn1-font-weight: 400;
+    --btn2-font-weight: 100;
+    --btn3-font-weight: 100;
 }
 
 .shortBreak{
@@ -21,6 +25,10 @@
     --btn3-bg-color: none;
 
     --btn-color: var(--bg-color);
+
+    --btn1-font-weight: 100;
+    --btn2-font-weight: 400;
+    --btn3-font-weight: 100;
 }
 
 .longBreak{
@@ -30,6 +38,10 @@
     --btn3-bg-color: rgba(0, 0, 0, 0.25);
 
     --btn-color: var(--bg-color);
+
+    --btn1-font-weight: 100;
+    --btn2-font-weight: 100;
+    --btn3-font-weight: 400;
 }
 
 body{
@@ -91,15 +103,22 @@ body{
     font-size: 1.2em;
 }
 
+.button:hover{
+    cursor: pointer;
+}
+
 #pmdrBtn{
+    font-weight: var(--btn1-font-weight);
     background-color: var(--btn1-bg-color);
 }
 
 #shrtBrkBtn{
+    font-weight: var(--btn2-font-weight);
     background-color: var(--btn2-bg-color);
 }
 
 #lngBrkBtn{
+    font-weight: var(--btn3-font-weight);
     background-color: var(--btn3-bg-color);
 }
 
@@ -114,13 +133,21 @@ body{
     display: inline-block;
     font-size: 1.7em;
     font-weight: 700;
+    transition: transform 0.2s;
+}
+
+#startStopBtn:active{
+    transform: translateY(5px);
 }
 
 h3{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.2em;
 }
 
+#textTimer:hover, h3:hover{
+    cursor: default;
+}
 
 /* If the screen size is 600px wide or less, adjust font size to fit on the screen */
 @media screen and (max-width: 600px) {
@@ -137,4 +164,3 @@ h3{
         font-size: 1em;
     }
   }
-
