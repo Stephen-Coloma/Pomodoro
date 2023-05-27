@@ -10,6 +10,8 @@
     --btn1-bg-color: rgba(0, 0, 0, 0.25);
     --btn2-bg-color: none;
     --btn3-bg-color: none;
+
+    --btn-color: var(--bg-color);
 }
 
 .shortBreak{
@@ -17,6 +19,8 @@
     --btn1-bg-color: none;
     --btn2-bg-color: rgba(0, 0, 0, 0.25);
     --btn3-bg-color: none;
+
+    --btn-color: var(--bg-color);
 }
 
 .longBreak{
@@ -24,6 +28,8 @@
     --btn1-bg-color: none;
     --btn2-bg-color: none;
     --btn3-bg-color: rgba(0, 0, 0, 0.25);
+
+    --btn-color: var(--bg-color);
 }
 
 body{
@@ -99,7 +105,7 @@ body{
 
 #startStopBtn{
     background-color: rgba(255, 255, 255); 
-    color: rgb(186, 73, 73);
+    color: var(--btn-color);
     border: none;
     border-radius: 5px;
     padding: 10px 60px;
