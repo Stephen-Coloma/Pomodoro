@@ -58,6 +58,9 @@ function pomodoro(){
   clock.seconds = 59;
   clock.temp = "25";
   clock.temp1 = "00";
+
+  //changing the body class name to pomodoro
+  document.getElementById("body").className = "pomodoro";
 }
 
 
@@ -71,6 +74,9 @@ function pomodoro(){
     clock.seconds = 59;
     clock.temp = "05";
     clock.temp1 = "00";
+
+      //changing the body class name to shortBreak
+    document.getElementById("body").className = "shortBreak";
   }
 
 
@@ -84,5 +90,8 @@ function pomodoro(){
     clock.seconds = 59;
     clock.temp = "15";
     clock.temp1 = "00";
+
+      //changing the body class name to longBreak
+    document.getElementById("body").className = "longBreak";
   }
   

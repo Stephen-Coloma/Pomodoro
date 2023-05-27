@@ -10,7 +10,6 @@
     --btn1-bg-color: rgba(0, 0, 0, 0.25);
     --btn2-bg-color: none;
     --btn3-bg-color: none;
-
 }
 
 .shortBreak{
@@ -21,7 +20,7 @@
 }
 
 .longBreak{
-    --bg-color: rgb(56, 133, 138);
+    --bg-color: rgb(57, 112, 151);
     --btn1-bg-color: none;
     --btn2-bg-color: none;
     --btn3-bg-color: rgba(0, 0, 0, 0.25);
