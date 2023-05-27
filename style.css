@@ -126,11 +126,15 @@ h3{
 @media screen and (max-width: 600px) {
     .card{
         height: 50vh;
-        width: 60vw;
+        width: 80vw;
     }
 
     .button{
         font-size: 0.8em;
+    }
+
+    #startStopBtn{
+        font-size: 1em;
     }
   }
 

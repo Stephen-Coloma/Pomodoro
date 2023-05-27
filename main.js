@@ -52,6 +52,7 @@ function update() {
 function pomodoro(){
   //changing the time display on screen
   document.getElementById("textTimer").innerHTML = '25:00'
+  document.getElementById("msg").innerHTML = 'Time to focus!'
 
   //setting up the clock object properties
   clock.minute = 24;
@@ -61,6 +62,7 @@ function pomodoro(){
 
   //changing the body class name to pomodoro
   document.getElementById("body").className = "pomodoro";
+
 }
 
 
@@ -68,6 +70,7 @@ function pomodoro(){
   function shortBreak(){
     //changing the time display on screen
     document.getElementById("textTimer").innerHTML = '05:00'
+    document.getElementById("msg").innerHTML = 'Time to rest!'
 
     //setting up the clock object properties
     clock.minute = 4;
@@ -77,13 +80,15 @@ function pomodoro(){
 
       //changing the body class name to shortBreak
     document.getElementById("body").className = "shortBreak";
+
   }
 
 
   //longbrak SET UP -------------------------------------------------------
   function longBreak(){
     //changing the time display on screen
-    let x = document.getElementById("textTimer").innerHTML = '15:00'
+    document.getElementById("textTimer").innerHTML = '15:00'
+    document.getElementById("msg").innerHTML = 'Time to rest!'
 
     //setting up the clock object properties
     clock.minute = 14;
