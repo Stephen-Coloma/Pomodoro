@@ -5,8 +5,9 @@ const clock = {
     resetMin: 24,
     resetSec: 60
 }
-
+//initializations
 let interval; 
+let cycle;
 
 function countdown() {
   const startStopBtn = document.getElementById("startStopBtn");
