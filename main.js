@@ -1,15 +1,9 @@
 const clock = {
     minute: 24,
-    seconds: 59
+    seconds: 59,
+    temp: "25",
+    temp1: "00"
 }
-
-//THIS NEEDS REVISION!
-
-function setUp(color){
-    document.getElementById("body").style.backgroundColor = color;
-}
-
-//POMODORO-------------------------------------------------------
 
 let interval; 
 
@@ -27,13 +21,11 @@ function countdown() {
   }else if(startStopBtn.innerHTML === "Reset"){
     if(startStopBtn.innerHTML ==="Reset"){
         startStopBtn.innerHTML = "Start";
-        const temp = "25";
-        const temp1 = "00";
-
+      
         clock.minute = 24;
         clock.seconds = 59;
 
-    document.getElementById("textTimer").innerHTML = temp + ":" + temp1;
+    document.getElementById("textTimer").innerHTML = clock.temp + ":" + clock.temp1;
     }    
   }
   
@@ -55,6 +47,9 @@ function update() {
       clock.seconds = 59;
     }
   }
+//POMODORO SET UP-------------------------------------------------------
+
+
 
   //SHORT BREAK-------------------------------------------------------
 

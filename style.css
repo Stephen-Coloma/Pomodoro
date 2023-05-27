@@ -5,14 +5,37 @@
     color: white;
 }
 
+:root{
+    --bg-color: rgb(186, 73, 73);
+    --btn1-bg-color: rgba(0, 0, 0, 0.25);
+    --btn2-bg-color: none;
+    --btn3-bg-color: none;
+
+}
+
+.shortBreak{
+    --bg-color: rgb(56, 133, 138);
+    --btn1-bg-color: none;
+    --btn2-bg-color: rgba(0, 0, 0, 0.25);
+    --btn3-bg-color: none;
+}
+
+.longBreak{
+    --bg-color: rgb(56, 133, 138);
+    --btn1-bg-color: none;
+    --btn2-bg-color: none;
+    --btn3-bg-color: rgba(0, 0, 0, 0.25);
+}
+
 body{
     height: 97vh;
     width: 97vw;
-    background-color: rgb(186, 73, 73);
+    background-color: var(--bg-color);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 
 .container{
@@ -64,7 +87,15 @@ body{
 }
 
 #pmdrBtn{
-    background-color: rgba(142, 76, 76,0.65);
+    background-color: var(--btn1-bg-color);
+}
+
+#shrtBrkBtn{
+    background-color: var(--btn2-bg-color);
+}
+
+#lngBrkBtn{
+    background-color: var(--btn3-bg-color);
 }
 
 #startStopBtn{
