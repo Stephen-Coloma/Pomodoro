@@ -17,7 +17,6 @@ function countdown() {
     // Start the interval of the update method with a delay of 1 sec
     interval = setInterval(update, 1000);
     startStopBtn.innerHTML = "Stop";
-    valid = true; 
   } else if(startStopBtn.innerHTML === "Stop"){ // Stop the interval
     clearInterval(interval);
     //after clearing interval, reset the minute and sec prpoperties 
@@ -56,20 +55,25 @@ function update() {
   }
 
 function timeIsUp(cycle){
+  const count = document.getElementById("count");
   switch(cycle){
     case 1:
+      count.innerHTML = "Short break count: " + 1;
       shortBreak();
       countdown();
       break;
     case 3:
+      count.innerHTML = "Short break count: " + 2;
       shortBreak();
       countdown();
       break;
     case 5:
+      count.innerHTML = "Short break count: " + 3;
       shortBreak();
       countdown();
       break;
     case 7:
+      count.innerHTML = "Long break!";
       longBreak();
       countdown();
       

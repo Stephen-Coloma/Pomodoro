@@ -140,9 +140,15 @@ body{
     transform: translateY(5px);
 }
 
-h3{
+#msg{
     font-weight: 400;
     font-size: 1.2em;
+}
+
+#count{
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1em;
 }
 
 #textTimer:hover, h3:hover{
