@@ -49,8 +49,40 @@ function update() {
   }
 //POMODORO SET UP-------------------------------------------------------
 
+function pomodoro(){
+  //changing the time display on screen
+  document.getElementById("textTimer").innerHTML = '25:00'
+
+  //setting up the clock object properties
+  clock.minute = 24;
+  clock.seconds = 59;
+  clock.temp = "25";
+  clock.temp1 = "00";
+}
 
 
-  //SHORT BREAK-------------------------------------------------------
+  //SHORTBREAK SET UP -------------------------------------------------------
+  function shortBreak(){
+    //changing the time display on screen
+    document.getElementById("textTimer").innerHTML = '05:00'
 
+    //setting up the clock object properties
+    clock.minute = 4;
+    clock.seconds = 59;
+    clock.temp = "05";
+    clock.temp1 = "00";
+  }
+
+
+  //longbrak SET UP -------------------------------------------------------
+  function longBreak(){
+    //changing the time display on screen
+    let x = document.getElementById("textTimer").innerHTML = '15:00'
+
+    //setting up the clock object properties
+    clock.minute = 14;
+    clock.seconds = 59;
+    clock.temp = "15";
+    clock.temp1 = "00";
+  }
   
