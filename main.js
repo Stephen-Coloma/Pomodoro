@@ -1,13 +1,14 @@
 const clock = {
-    minute: 24,
-    seconds: 60,
+    minute: 0,
+    seconds: 5,
     dummyDisplay: "25:00",
     resetMin: 24,
-    resetSec: 60
+    resetSec: 60,
+    cycle:0
 }
 //initializations
 let interval; 
-let cycle;
+
 
 function countdown() {
   const startStopBtn = document.getElementById("startStopBtn");
@@ -46,7 +47,47 @@ function update() {
       clock.minute--;
       clock.seconds = 60;
     }
+  
+    if(clock.minute==-1 & clock.seconds==59){ //if time is up
+      clearInterval(interval);
+      let cycle = ++clock.cycle;
+      timeIsUp(cycle);
+    }
   }
+
+function timeIsUp(cycle){
+  switch(cycle){
+    case 1:
+      shortBreak();
+      countdown();
+      break;
+    case 3:
+      shortBreak();
+      countdown();
+      break;
+    case 5:
+      shortBreak();
+      countdown();
+      break;
+    case 7:
+      longBreak();
+      countdown();
+      
+      break;
+    default:{
+      pomodoro();
+      countdown();
+      break;
+    }
+    
+  }
+
+  if(clock.cycle == 8){
+    clock.cycle = 0;
+  }
+}
+
+
 //POMODORO SET UP-------------------------------------------------------
 
 function pomodoro(){
@@ -73,7 +114,7 @@ function pomodoro(){
   function shortBreak(){
     //changing the time display on screen
     document.getElementById("textTimer").innerHTML = '05:00'
-    document.getElementById("msg").innerHTML = 'Time to rest!'
+    document.getElementById("msg").innerHTML = 'Have a short rest!'
     document.getElementById("startStopBtn").innerHTML="Start"
     clearInterval(interval);
 
@@ -95,7 +136,7 @@ function pomodoro(){
   function longBreak(){
     //changing the time display on screen
     document.getElementById("textTimer").innerHTML = '15:00'
-    document.getElementById("msg").innerHTML = 'Time to rest!'
+    document.getElementById("msg").innerHTML = 'Have a long rest!'
     document.getElementById("startStopBtn").innerHTML="Start"
     clearInterval(interval);
 
