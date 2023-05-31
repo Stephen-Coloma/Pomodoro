@@ -1,14 +1,16 @@
 const clock = {
-    minute: 24,
-    seconds: 60,
+    minute: 0,
+    seconds: 5,
     dummyDisplay: "25:00",
     resetMin: 24,
     resetSec: 60,
     cycle:0
 }
+
+// UTILITY METHODS
+
 //initializations
 let interval; 
-
 
 function countdown() {
   const startStopBtn = document.getElementById("startStopBtn");
@@ -55,6 +57,9 @@ function update() {
   }
 
 function timeIsUp(cycle){
+  
+  playSound('ring') //every time's up, a ring will play
+  
   const count = document.getElementById("count");
   switch(cycle){
     case 1:
@@ -89,6 +94,23 @@ function timeIsUp(cycle){
   if(clock.cycle == 8){
     clock.cycle = 0;
   }
+}
+
+
+function playSound(soundId){ //For click sound
+  let audio;
+
+  switch (soundId){
+    case 'click':
+      audio = document.getElementById(soundId);
+      break;
+    case 'ring' : 
+      audio = document.getElementById(soundId);
+      break
+  }
+
+  audio.currentTime = 0; // Rewind audio to the beginning
+  audio.play(); 
 }
 
 
@@ -156,9 +178,3 @@ function pomodoro(){
 
   }
 
-  function playSound(){
-    var audio = document.getElementById('button-audio');
-
-    audio.currentTime = 0; // Rewind audio to the beginning
-    audio.play(); 
-  }

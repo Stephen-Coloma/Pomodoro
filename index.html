@@ -29,14 +29,19 @@
 
             <!-- Start and Stop division -->
             <div class="util">
-                <button type="button" class="button" id="startStopBtn" onclick="countdown();playSound()">Start</button>
-                <audio id="button-audio">
-                    <source src="sounds/click.m4a" type="audio/mpeg">
-                </audio>
+                <button type="button" class="button" id="startStopBtn" onclick="countdown();playSound('click')">Start</button>
             </div>
         </div>
         <h3 id="msg">Time to focus!</h3>
         <h3 id="count">Short break count: 0</h3>
     </div>
+
+    <!-- Audio files -->
+    <audio id="click">
+        <source src="sounds/click.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="ring">
+        <source src="sounds/ring.m4a" type="audio/mpeg">
+    </audio>
 </body> 
 </html>
