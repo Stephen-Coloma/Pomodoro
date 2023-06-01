@@ -18,5 +18,5 @@ s
 2. On short break
 ![Alt Text](assets/readme%20images/Screenshot2.png)
 
-3. On ling break
+3. On long break
 ![Alt Text](assets/readme%20images/Screenshot3.png)
