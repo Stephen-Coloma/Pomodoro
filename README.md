@@ -1,5 +1,6 @@
 # Pomodoro Timer
 This repository holds my simple practice project called Pomodoro Timer. The design is inspired by www.pomofocus.io
+Check it out on this link: Pomodoro.github.io
 
 **Project Description:**
 
