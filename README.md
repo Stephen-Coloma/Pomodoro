@@ -1,13 +1,13 @@
 # Pomodoro Timer
 
-### **Check out on this link: [Link Text](stephen-coloma.github.io/Pomodoro/)**
+### **Check out on this link: [stephen-coloma.github.io/Pomodoro/](stephen-coloma.github.io/Pomodoro/)**
 ---
 ### **Project Description:**
 This repository holds my simple practice project called Pomodoro Timer. The design is inspired by www.pomofocus.io<br>
 The Simple Pomodoro Timer Website is a static website designed to help users improve productivity and manage their time effectively using the Pomodoro Technique. The Pomodoro Technique is a time management method that breaks work into intervals, typically 25 minutes in length, separated by short breaks.<br>
 
 ### **Tech used:**
-1. HTML5git 
+1. HTML5
 2. CSS3
 3. Javascript
 
