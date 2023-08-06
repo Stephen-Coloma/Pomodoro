@@ -1,6 +1,6 @@
 const clock = {
-    minute: 0,
-    seconds: 5,
+    minute: 24,
+    seconds: 60,
     dummyDisplay: "25:00",
     resetMin: 24,
     resetSec: 60,
