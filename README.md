@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-### **Check out on this link: [stephen-coloma.github.io/Pomodoro/](stephen-coloma.github.io/Pomodoro/)**
+### **Check out on this link: [https://stephen-coloma.github.io/Pomodoro/](https://stephen-coloma.github.io/Pomodoro/)**
 ---
 ### **Project Description:**
 This repository holds my simple practice project called Pomodoro Timer. The design is inspired by www.pomofocus.io<br>
